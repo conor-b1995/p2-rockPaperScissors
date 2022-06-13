@@ -12,10 +12,44 @@ body {
     color: black;
 }
 
-#rock {
-    font-size: 10rem;
-    border-radius: 30px;
-    background-color: #055A1B;
-    padding-right: 10px;
-    padding-top: 10px;
+/* header section, rules and make pick */
+
+header > h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header > p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.pick {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* buttons */
+
+.rules {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.btn-rules {
+    background-color: transparent;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.btn {
+    font-size: 7rem;
+    border-radius: 110px;
+    background-color: transparent;
+    border: 1px solid black;
+    margin: 0 10px;
 }

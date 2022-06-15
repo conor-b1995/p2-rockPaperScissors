@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Kdam Thmor Pro', sans-serif;
-    background-color: greenyellow;
+    background-color: #30da2a;
     color: black;
 }
 
@@ -46,21 +46,29 @@ header>p {
     padding: 5px;
 }
 
+.btn-rules:hover {
+    color: black;
+    background-color: orangered;
+    cursor: pointer;
+}
+
 .buttons {
     text-align: center;
 }
 
 .btn {
     font-size: 7rem;
-    border-radius: 110px;
+    border-radius: 50%;
     background-color: yellow;
     border: 2px dashed black;
     margin: 0 10px;
     padding: 10px;
+    transition: all 0.25s ease-in-out;
 }
 
 .btn:hover {
-    background-color: blue;
+    background-color: #ff00f7;
+    cursor: pointer;
 }
 
 /* the user selection and computer selection */

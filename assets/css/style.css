@@ -43,13 +43,21 @@ header>p {
     background-color: transparent;
     color: orangered;
     border: 2px solid black;
-    padding: 5px;
+    padding: 10px;
+
+    border-radius: 50%;
+    box-shadow: 4px 4px yellow;
 }
 
 .btn-rules:hover {
     color: black;
     background-color: orangered;
     cursor: pointer;
+}
+
+.btn-rules:active {
+    box-shadow: 2px 2px yellow;
+    transform: translateY(2px);
 }
 
 .buttons {

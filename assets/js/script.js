@@ -5,24 +5,35 @@ let lizard = document.getElementById('lizard');
 let spock = document.getElementById('spock');
 let userChoice = document.getElementById('user-choice');
 let compChoice = document.getElementById('comp-choice');
+let userPoints = 0;
+let compPoints = 0;
+let userScore = document.getElementById('user-score');
+let compScore = document.getElementById('comp-score');
 
 
+function youWin(user, computer) {
 
-function youWin() {
-
-    console.log('You Win');
+    userScore.innerHTML = userPoints++;
+    document.getElementById('who-wins').innerHTML = `${user} beats ${computer}`;
+    document.getElementById('message').innerHTML = "You beat the computer..you're a genius";
   
 }
 
-function youLose() {
+// youWin();
 
-    console.log('You Lose');
+function youLose(user, computer) {
+
+    compScore.innerHTML = compPoints++;
+    document.getElementById('who-wins').innerHTML = `${computer} beats ${user}`;
+    document.getElementById('message').innerHTML = 'The computer just destroyed you..embarrassing';
 
 }
 
 function draw() {
 
-    console.log('Its a Draw');
+    document.getElementById('who-wins').innerHTML = 'Its a Draw';
+    document.getElementById('message').innerHTML = '';
+
     
 }
 
@@ -42,19 +53,19 @@ function game(usersPick) {
         case 'LizardSpock':
         case 'SpockRock':
         case 'SpockScissors':
-            youWin();
+            youWin(usersPick, computerChoice);
             break;
         case 'ScissorsRock':
         case 'LizardRock':
         case 'RockPaper':
-        case 'PaperSpock':
+        case 'SpockPaper':
         case 'PaperScissors':
         case 'LizardScissors':
         case 'PaperLizard':
         case 'SpockLizard':
         case 'RockSpock':
         case 'ScissorsSpock':
-            youLose();
+            youLose(usersPick, computerChoice);
             break;
         case 'RockRock':
         case 'PaperPaper':
@@ -78,7 +89,7 @@ function randomComputerChoice() {
     return choices[randomNumber];
 }
 
-randomComputerChoice();
+// randomComputerChoice();
 
 
 function usersOptions() {

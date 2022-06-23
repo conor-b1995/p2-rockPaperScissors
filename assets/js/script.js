@@ -13,9 +13,9 @@ let compScore = document.getElementById('comp-score');
 
 function youWin(user, computer) {
 
-    userScore.innerHTML = userPoints++;
+    userScore.innerHTML = ++userPoints;
     document.getElementById('who-wins').innerHTML = `${user} beats ${computer}`;
-    document.getElementById('message').innerHTML = "You beat the computer..you're a genius";
+    document.getElementById('message').innerHTML = "You beat the computer...you're a genius";
 
 }
 
@@ -23,9 +23,9 @@ function youWin(user, computer) {
 
 function youLose(user, computer) {
 
-    compScore.innerHTML = compPoints++;
+    compScore.innerHTML = ++compPoints;
     document.getElementById('who-wins').innerHTML = `${computer} beats ${user}`;
-    document.getElementById('message').innerHTML = 'The computer just destroyed you..embarrassing';
+    document.getElementById('message').innerHTML = 'The computer just destroyed you...embarrassing';
 
 }
 

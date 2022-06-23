@@ -34,28 +34,28 @@ header>p {
 /* buttons */
 
 .rules {
-    font-size: 1.5rem;
     text-align: center;
     margin-top: 20px;
 }
 
-.btn-rules {
+#btn-rules {
     background-color: black;
     color: yellow;
     border: 2px solid black;
     padding: 10px;
+    font-size: 1.5rem;
 
     border-radius: 50%;
     box-shadow: 4px 4px yellow;
 }
 
-.btn-rules:hover {
+#btn-rules:hover {
     color: black;
     background-color: yellow;
     cursor: pointer;
 }
 
-.btn-rules:active {
+#btn-rules:active {
     box-shadow: 2px 2px yellow;
     transform: translateY(2px);
 }
@@ -87,7 +87,7 @@ header>p {
     margin-top: 50px;
 }
 
-/* display the winner, user and computer scores info */
+/* display the winner and also the user and computer scores info */
 
 .winner {
     text-align: center;
@@ -103,9 +103,42 @@ header>p {
     text-align: center;
     font-size: 1.5rem;
     margin-top: 50px;
+    margin-bottom: 50px;
 
     display: flex;
     gap: 5rem;
     /* align-items: center; */
     justify-content: center;
+}
+
+/* rules modal */
+
+#my-modal {
+    display: none; 
+    position: fixed; 
+    overflow: auto;   
+}
+
+#rules-content {
+    display: none;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+
+    background-color: yellow;
+    color: black;
+    font-size: 1.5rem;
+    border: 10px solid #ff00f7;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 3.5rem;
+}
+
+.close:hover {
+    cursor: pointer;
 }

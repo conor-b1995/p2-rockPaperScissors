@@ -16,7 +16,7 @@ function youWin(user, computer) {
     userScore.innerHTML = userPoints++;
     document.getElementById('who-wins').innerHTML = `${user} beats ${computer}`;
     document.getElementById('message').innerHTML = "You beat the computer..you're a genius";
-  
+
 }
 
 // youWin();
@@ -34,7 +34,7 @@ function draw() {
     document.getElementById('who-wins').innerHTML = 'Its a Draw';
     document.getElementById('message').innerHTML = '';
 
-    
+
 }
 
 
@@ -117,3 +117,21 @@ function usersOptions() {
 }
 
 usersOptions();
+
+var modal = document.getElementById('rules-content');
+var btn = document.getElementById('btn-rules');
+var close = document.getElementsByClassName('close')[0];
+
+btn.onclick = function () {
+        modal.style.display = 'block';
+}
+
+close.onclick = function () {
+    modal.style.display = 'none';
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }

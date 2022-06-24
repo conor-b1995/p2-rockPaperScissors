@@ -25,28 +25,31 @@
 
     </div>
 
-    <div id="rules-modal my-modal">
+    <!-- rules modal content -->
+
+    <div id="rules-modal">
 
         <div id="rules-content">
 
             <span class="close">&times;</span>
-            <p><i class="fa-regular fa-hand-back-fist"></i> Rock destroys scissors  <i class="fa-regular fa-hand-scissors"></i></p>
+            <p><i class="fa-regular fa-hand-back-fist"></i> Rock destroys scissors <i class="fa-regular fa-hand-scissors"></i></p>
             <p><i class="fa-regular fa-hand-back-fist"></i> Rock crushes lizard <i class="fa-regular fa-hand-lizard"></i></p>
-            <p><i class="fa-regular fa-hand-scissors"></i>  Scissors cuts paper <i class="fa-regular fa-hand"></i></p>
-            <p><i class="fa-regular fa-hand-scissors"></i>  Scissors decapitates lizard <i class="fa-regular fa-hand-lizard"></i></p>
-            <p><i class="fa-regular fa-hand"></i>  Paper covers rock <i class="fa-regular fa-hand-back-fist"></i></p>
-            <p><i class="fa-regular fa-hand"></i>  Paper disproves spock <i class="fa-regular fa-hand-spock"></i></p>
-            <p><i class="fa-regular fa-hand-lizard"></i>  Lizard eats paper <i class="fa-regular fa-hand"></i></p>
-            <p><i class="fa-regular fa-hand-lizard"></i>  Lizard poisons Spock <i class="fa-regular fa-hand-spock"></i></p>
-            <p><i class="fa-regular fa-hand-spock"></i>  Spock vaporizes rock <i class="fa-regular fa-hand-back-fist"></i></p>
-            <p><i class="fa-regular fa-hand-spock"></i>  Spock smashes scissors <i class="fa-regular fa-hand-scissors"></i></p>
+            <p><i class="fa-regular fa-hand-scissors"></i> Scissors cuts paper <i class="fa-regular fa-hand"></i></p>
+            <p><i class="fa-regular fa-hand-scissors"></i> Scissors decapitates lizard <i class="fa-regular fa-hand-lizard"></i></p>
+            <p><i class="fa-regular fa-hand"></i> Paper covers rock <i class="fa-regular fa-hand-back-fist"></i></p>
+            <p><i class="fa-regular fa-hand"></i> Paper disproves spock <i class="fa-regular fa-hand-spock"></i></p>
+            <p><i class="fa-regular fa-hand-lizard"></i> Lizard eats paper <i class="fa-regular fa-hand"></i></p>
+            <p><i class="fa-regular fa-hand-lizard"></i> Lizard poisons Spock <i class="fa-regular fa-hand-spock"></i></p>
+            <p><i class="fa-regular fa-hand-spock"></i> Spock vaporizes rock <i class="fa-regular fa-hand-back-fist"></i></p>
+            <p><i class="fa-regular fa-hand-spock"></i> Spock smashes scissors <i class="fa-regular fa-hand-scissors"></i></p>
 
         </div>
 
     </div>
 
     <div class="pick">
-        <p>Make your decision...carefully!!</p>
+        <p>Make your decision...carefully !!</p>
+        <p>First to 10 wins !!</p>
     </div>
 
     <!-- buttons for user selection -->
@@ -99,6 +102,21 @@
                 id="comp-score">0</span></span>
     </div>
 
+    <!-- end game modal that activates when user or computer gets 10 points -->
+
+    <div id="end-game-modal">
+
+        <div id="end-game-content">
+
+            <p id="end-game-winner"></p>
+
+            <button id="play-again">Play Again ?</button>
+
+        </div>
+
+    </div>
+
+    <!-- javascript and font awesome scripts -->
 
     <script src="https://kit.fontawesome.com/14719ca4b9.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>

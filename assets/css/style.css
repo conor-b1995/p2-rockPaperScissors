@@ -12,7 +12,7 @@ body {
     color: black;
 }
 
-/* header section, rules and make pick */
+/* header section and make pick */
 
 header>h1 {
     font-size: 3.5rem;
@@ -31,7 +31,7 @@ header>p {
     margin: 25px 0 25px 0;
 }
 
-/* buttons */
+/* rules section and selection buttons */
 
 .rules {
     text-align: center;
@@ -113,32 +113,75 @@ header>p {
 
 /* rules modal */
 
-#my-modal {
-    display: none; 
-    position: fixed; 
-    overflow: auto;   
-}
-
 #rules-content {
     display: none;
-    margin: auto;
-    margin-top: 20px;
-    padding: 20px;
-    width: 35%;
-    text-align: center;
-
-    background-color: yellow;
-    color: black;
-    font-size: 1.5rem;
+    position: fixed;
+    z-index: 1;
+    padding-top: 2rem;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 60%;
+    background-color: rgb(255, 251, 0);
+    border-radius: 20%;
     border: 10px solid #ff00f7;
+
+    text-align: center;
+    color: black;
+    font-size: 2rem;
 }
 
 .close {
     color: black;
     float: right;
+    right: 10%;
+    position: absolute;
     font-size: 3.5rem;
 }
 
 .close:hover {
     cursor: pointer;
+}
+
+/* end of game modal and play again button */
+
+#end-game-content {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 2rem;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 30%;
+    background-color: rgb(255, 251, 0);
+    border-radius: 20%;
+    border: 10px solid #ff00f7;
+
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+}
+
+#play-again {
+    background-color: black;
+    color: yellow;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-top: 30px;
+
+    border-radius: 40%;
+    box-shadow: 4px 4px black;
+}
+
+#play-again:hover {
+    color: black;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+#play-again:active {
+    box-shadow: 2px 2px yellow;
+    transform: translateY(2px);
 }

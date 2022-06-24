@@ -10,6 +10,9 @@ let compPoints = 0;
 let userScore = document.getElementById('user-score');
 let compScore = document.getElementById('comp-score');
 
+/**
+ * prints outcome if you have won and increments user score
+ */
 
 function youWin(user, computer) {
 
@@ -17,9 +20,12 @@ function youWin(user, computer) {
     document.getElementById('who-wins').innerHTML = `${user} beats ${computer}`;
     document.getElementById('message').innerHTML = "You beat the computer...you're a genius";
 
+    endGame();
 }
 
-// youWin();
+/**
+ * prints outcome if you have lost and increments computer score
+ */
 
 function youLose(user, computer) {
 
@@ -27,16 +33,24 @@ function youLose(user, computer) {
     document.getElementById('who-wins').innerHTML = `${computer} beats ${user}`;
     document.getElementById('message').innerHTML = 'The computer just destroyed you...embarrassing';
 
+    endGame();
 }
+
+/**
+ * prints outcome if the result is a draw  
+ */
 
 function draw() {
 
     document.getElementById('who-wins').innerHTML = 'Its a Draw';
     document.getElementById('message').innerHTML = '';
 
-
 }
 
+/**
+ * this function switches through all possible outcomes 
+ * and decides if the user has won, lost or if they have drawn
+ */
 
 function game(usersPick) {
 
@@ -81,6 +95,10 @@ function game(usersPick) {
 
 }
 
+/**
+ * function for the computer to make a random selection
+ */
+
 function randomComputerChoice() {
     const choices = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']
 
@@ -89,8 +107,11 @@ function randomComputerChoice() {
     return choices[randomNumber];
 }
 
-// randomComputerChoice();
 
+/**
+ * event listeners for each option for the user 
+ * such as rock, paper etc.
+ */
 
 function usersOptions() {
 
@@ -118,6 +139,8 @@ function usersOptions() {
 
 usersOptions();
 
+// section to open the rules modal and to close it when X is pressed
+
 var modal = document.getElementById('rules-content');
 var btn = document.getElementById('btn-rules');
 var close = document.getElementsByClassName('close')[0];
@@ -135,3 +158,36 @@ window.onclick = function(event) {
       modal.style.display = "none";
     }
   }
+
+  /**
+   * function to end the game once the user
+   * or computer reaches a score of 10
+   */
+
+function endGame() {
+
+    let endGameContent = document.getElementById('end-game-content');
+    let endGameWinner = document.getElementById('end-game-winner');
+
+    if (userPoints === 10) {
+        endGameContent.style.display = 'block'
+        endGameWinner.innerHTML = 'You\'ve just defeated the computer...I hope your proud of yourself'
+    }
+    else if (compPoints === 10) {
+        endGameContent.style.display = 'block'
+        endGameWinner.innerHTML = 'You\'ve just lost to the computer...you should be ashamed of yourself'
+    }
+
+}
+
+// functions to reset the game when the play again button is clicked
+
+const playAgain = document.getElementById('play-again');
+
+playAgain.addEventListener('click', () => {
+    resetGame()
+});
+
+function resetGame() {
+    window.location.reload();
+}

@@ -185,3 +185,76 @@ header>p {
     box-shadow: 2px 2px yellow;
     transform: translateY(2px);
 }
+
+/* media queries for different screen sizes */
+
+@media screen and (max-width:850px) {
+    
+    header>h1 {
+        font-size: 2.5rem;
+    }
+
+    header>p {
+        font-size: 2rem;
+    }
+
+    .pick {
+        font-size: 2rem;
+    }
+}
+
+/* medium size screens */
+
+@media screen and (max-width:750px) {
+    
+    #rules-content {
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        height: 50vh;
+        font-size: 1.5rem;
+    }
+
+    .close {
+        right: 5%;
+    }
+}
+
+/* for smaller mobile devices */
+
+@media screen and (max-width:460px) {
+    
+    .btn {
+        font-size: 5rem;
+        /* margin-top: 10px; */
+    }
+
+    header>h1 {
+        font-size: 2rem;
+    }
+
+    header>p {
+        font-size: 1.5rem;
+    }
+
+    .pick {
+        font-size: 1.5rem;
+    }
+
+    .scores {
+        gap: 2rem;
+    }
+
+    #rules-content {
+        font-size: 1.25rem;
+        
+    }
+
+    .close {
+        position: relative;
+    }
+
+    #end-game-content {
+        font-size: 1.25rem;
+    }
+}

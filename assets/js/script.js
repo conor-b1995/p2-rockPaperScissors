@@ -18,7 +18,7 @@ function youWin(user, computer) {
 
     userScore.innerHTML = ++userPoints;
     document.getElementById('who-wins').innerHTML = `${user} beats ${computer}`;
-    document.getElementById('message').innerHTML = "You beat the computer...you're a genius";
+    document.getElementById('message').innerHTML = "You beat the computer...lets go !!";
 
     endGame();
 }
@@ -31,7 +31,7 @@ function youLose(user, computer) {
 
     compScore.innerHTML = ++compPoints;
     document.getElementById('who-wins').innerHTML = `${computer} beats ${user}`;
-    document.getElementById('message').innerHTML = 'The computer just destroyed you...embarrassing';
+    document.getElementById('message').innerHTML = 'The computer just destroyed you...unlucky';
 
     endGame();
 }
@@ -171,11 +171,11 @@ function endGame() {
 
     if (userPoints === 10) {
         endGameContent.style.display = 'block'
-        endGameWinner.innerHTML = 'You\'ve just defeated the computer...I hope your proud of yourself'
+        endGameWinner.innerHTML = 'You\'ve just defeated the computer...congratulations'
     }
     else if (compPoints === 10) {
         endGameContent.style.display = 'block'
-        endGameWinner.innerHTML = 'You\'ve just lost to the computer...you should be ashamed of yourself'
+        endGameWinner.innerHTML = 'You\'ve just lost to the computer...better luck next time'
     }
 
 }

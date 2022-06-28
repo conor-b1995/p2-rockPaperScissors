@@ -112,7 +112,6 @@ header>p {
 
     display: flex;
     gap: 5rem;
-    /* align-items: center; */
     justify-content: center;
 }
 
@@ -231,7 +230,8 @@ header>p {
     
     .btn {
         font-size: 5rem;
-        /* margin-top: 10px; */
+        color: black;
+        margin-top: 5px;
     }
 
     header>h1 {

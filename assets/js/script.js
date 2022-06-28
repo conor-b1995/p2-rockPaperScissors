@@ -102,7 +102,7 @@ function game(usersPick) {
 function randomComputerChoice() {
     const choices = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']
 
-    const randomNumber = Math.floor(Math.random() * 5)
+    const randomNumber = Math.floor(Math.random() * 5);
 
     return choices[randomNumber];
 }
@@ -116,24 +116,24 @@ function randomComputerChoice() {
 function usersOptions() {
 
     rock.addEventListener('click', function () {
-        game('Rock')
-    })
+        game('Rock');
+    });
 
     paper.addEventListener('click', function () {
-        game('Paper')
-    })
+        game('Paper');
+    });
 
     scissors.addEventListener('click', function () {
-        game('Scissors')
-    })
+        game('Scissors');
+    });
 
     lizard.addEventListener('click', function () {
-        game('Lizard')
-    })
+        game('Lizard');
+    });
 
     spock.addEventListener('click', function () {
-        game('Spock')
-    })
+        game('Spock');
+    });
 
 }
 
@@ -146,23 +146,23 @@ var btn = document.getElementById('btn-rules');
 var close = document.getElementsByClassName('close')[0];
 
 btn.onclick = function () {
-        modal.style.display = 'block';
-}
+    modal.style.display = 'block';
+};
 
 close.onclick = function () {
     modal.style.display = 'none';
-}
+};
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
-      modal.style.display = "none";
+        modal.style.display = "none";
     }
-  }
+};
 
-  /**
-   * function to end the game once the user
-   * or computer reaches a score of 10
-   */
+/**
+ * function to end the game once the user
+ * or computer reaches a score of 10
+ */
 
 function endGame() {
 
@@ -170,12 +170,11 @@ function endGame() {
     let endGameWinner = document.getElementById('end-game-winner');
 
     if (userPoints === 10) {
-        endGameContent.style.display = 'block'
-        endGameWinner.innerHTML = 'You\'ve just defeated the computer...congratulations'
-    }
-    else if (compPoints === 10) {
-        endGameContent.style.display = 'block'
-        endGameWinner.innerHTML = 'You\'ve just lost to the computer...better luck next time'
+        endGameContent.style.display = 'block';
+        endGameWinner.innerHTML = 'You\'ve just defeated the computer...congratulations';
+    } else if (compPoints === 10) {
+        endGameContent.style.display = 'block';
+        endGameWinner.innerHTML = 'You\'ve just lost to the computer...better luck next time';
     }
 
 }
@@ -185,7 +184,7 @@ function endGame() {
 const playAgain = document.getElementById('play-again');
 
 playAgain.addEventListener('click', () => {
-    resetGame()
+    resetGame();
 });
 
 function resetGame() {

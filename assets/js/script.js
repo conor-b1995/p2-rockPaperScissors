@@ -143,13 +143,13 @@ usersOptions();
 
 var modal = document.getElementById('rules-content');
 var btn = document.getElementById('btn-rules');
-var close = document.getElementsByClassName('close')[0];
+var closeWindow = document.getElementsByClassName('close')[0];
 
 btn.onclick = function () {
     modal.style.display = 'block';
 };
 
-close.onclick = function () {
+closeWindow.onclick = function () {
     modal.style.display = 'none';
 };
 

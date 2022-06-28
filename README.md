@@ -1,6 +1,6 @@
 # Rock Paper Scissors Lizard Spock
 
-Rock Paper Scissors Lizard Spock is a twist on the classic game of Rock Paper Scissors which originated on the show The Big Bang Theory. The purpose of the game is to entertain both new and returning users by allowing them to compete against the computer, where the first to win 10 rounds wins the overall game. For a first-time user there is a rule section that clearly indicates all winning scenarios for each selection. The figure needed for the user or computer is displayed clearly in a paragraph below the rules. The game also validates the user inputs (rock, paper, scissors, lizard or spock) and gives feedback to the user where needed. Feedback is provided for each round with text and the scoreboard is updated after each round increasing the score of the user score or the computer score depending on who wins the round. Feedback is also provided at the end of the game by an end of game modal which pops up announcing the winner and gives the user the chance to play again.
+Rock Paper Scissors Lizard Spock is a twist on the classic game of Rock Paper Scissors which originated on the show The Big Bang Theory. The purpose of the game is to entertain both new and returning users by allowing them to compete against the computer, where the first to win 10 rounds wins the overall game. For a first-time user there is a rule section that clearly indicates all winning scenarios for each selection. The figure needed for the user or computer is displayed clearly in a paragraph below the rules. The game also validates the user inputs (rock, paper, scissors, lizard or spock) and gives feedback to the user where needed. Feedback is provided for each round with text and the scoreboard is updated after each round increasing the score of the user score or the computer score depending on who wins the round. Feedback is also provided at the end of the game by an end-of-game modal which pops up announcing the winner and gives the user the chance to play again.
 ![Responsiveness](assets/images/responsiveness.jpg)
 
 ## User Experience (UX)
@@ -43,7 +43,7 @@ Rock Paper Scissors Lizard Spock is a twist on the classic game of Rock Paper Sc
 ![Round feedback](assets/images/round-feedback.jpg)
 ### Score Board
 * Displays the number of rounds won by the user and computer so the user can see how close they are to a victory or a loss.
-* Once the user or computer reaches the max score of 10 an end of game modal will pop up.
+* Once the user or computer reaches the max score of 10 an end-of-game modal will pop up.
 ![Score board](assets/images/score-board.jpg)
 ### End Game Modal
 * The end game modal pops up when either the user or computer has reached a score of 10.
@@ -58,6 +58,8 @@ Rock Paper Scissors Lizard Spock is a twist on the classic game of Rock Paper Sc
 ## Solved Bugs
 * I came across a problem with the user and computer scores not incrementing after the first round of selections. To fix this I simply changed the javascript code from userPoints++ to ++userPoints and the same switch for the computer points.
 * I had a problem with the rules modal not appearing on top of the rest of the content and to fix this I set the z-index to 1.
+## Unsolved Bugs
+* When the user opens the rules modal they should be able to close the modal by clicking anywhere on the window however, this only works when the user clicks a certain part of the window. Although the user can't close the modal this way they can still close it using the 'X' button. 
 
 ## Testing
 ### Validator Testing
@@ -68,8 +70,9 @@ Rock Paper Scissors Lizard Spock is a twist on the classic game of Rock Paper Sc
 * I used the W3C CSS validator to test my CSS was of good quality, and the validator returned no errors.
 ![CSS validation](assets/images/css-validation.jpg)
 #### JavaScript
+* 
 #### Lighthouse
-* I used lighthouse from chrome dev tools to make sure the page was accesible and easy to read.
+* I used lighthouse from chrome dev tools to make sure the page was accessible and easy to read.
 ![Lighthouse](assets/images/lighthouse.jpg)
 #### Responsiveness
 * I tested the responsiveness of the page using chrome dev tools throughout the making of the page.
@@ -78,15 +81,23 @@ Rock Paper Scissors Lizard Spock is a twist on the classic game of Rock Paper Sc
 ## Deployment
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 
-1. From the github repository click on "settings" from the navigation bar.
+1. From the GitHub repository click on "settings" from the navigation bar.
 2. Click on "pages" from the navigation section on the left.
 3. In the "source" section choose which branch you want to use from the dropdown menu, it will usually be the "main".
-4. Select which folder you want to use, in most cases its the "/root".
-5. Hit the "save" button, then wait for your site to be published.(This can take some time.).
+4. Select which folder you want to use, in most cases it's the "/root".
+5. Hit the "save" button, then wait for your site to be published. (This can take some time.).
 6. When your site is ready and published the link will be above the "source" section.
 
 [The live link can be found here](https://conor-b1995.github.io/p2-rockPaperScissors/)
 
 ## Credits
-
+### Media
+* The font used in this project is Kdam Thmor Pro and I got this font from [Google Fonts](https://fonts.google.com/).
+* The icons used for the user options section of the game were taken from [Font Awesome](https://fontawesome.com/). 
+### Content
+* The help with the 'flex' for the scoreboard section and for the shadowing on the 'Rules' and 'Play Again' buttons came from [Kevin Powell](https://www.youtube.com/kepowob).
+* [W3 Schools](https://www.w3schools.com/howto/howto_css_modals.asp) 'How to' tutorial helped me create the rules modal and end game modal. 
+* I got some help with the functions in my Javascript code from [freeCodeCamp.org](https://www.youtube.com/c/Freecodecamp) 
+### Acknowledgements
+Id like to thank my mentor Anthony Ugwu for all his help and guidance through this project.
 

@@ -26,6 +26,7 @@ Rock Paper Scissors Lizard Spock is a twist on the classic game of Rock Paper Sc
 * The rules button has yellow shadowing behind it to add to the effect that it is a button.
 ![Taglines](assets/images/taglines.jpg)
 ### Rules Modal
+* The instructions section lets the user know how the game will work.
 * The rules modal displays all the possible ways of winning a round of the game. 
 * The X in the top right corner of the modal when clicked will close the modal and return you to the game screen.
 ![Rules modal](assets/images/rules-content.jpg)

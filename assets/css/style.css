@@ -125,14 +125,18 @@ header>p {
     left: 10%;
     top: 10%;
     width: 80%;
-    height: 60%;
+    height: 70%;
     background-color: rgb(255, 251, 0);
     border-radius: 20%;
     border: 10px solid #ff00f7;
 
     text-align: center;
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+ol>li {
+    list-style-type: none;
 }
 
 .close {
@@ -209,13 +213,13 @@ header>p {
 
 /* medium size screens */
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:790px) {
     
     #rules-content {
         left: 5%;
         right: 5%;
         width: 90%;
-        height: 50vh;
+        height: 80vh;
         font-size: 1.5rem;
     }
 
@@ -252,7 +256,7 @@ header>p {
 
     #rules-content {
         font-size: 1.25rem;
-        
+        height: 70vh;
     }
 
     .close {

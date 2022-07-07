@@ -71,7 +71,9 @@ Rock Paper Scissors Lizard Spock is a twist on the classic game of Rock Paper Sc
 * I used the W3C CSS validator to test my CSS was of good quality, and the validator returned no errors.
 ![CSS validation](assets/images/css-validation.jpg)
 #### JavaScript
-* 
+* I tested my javascript code throughout the project using console.log() and using the console on chrome developer tools.
+* No errors were returned when passing my Javascript code through the JSHint validator.
+![Javascript validation](assets/images/JSHint.jpg)
 #### Lighthouse
 * I used lighthouse from chrome dev tools to make sure the page was accessible and easy to read.
 ![Lighthouse](assets/images/lighthouse.jpg)

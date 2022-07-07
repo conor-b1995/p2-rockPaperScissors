@@ -100,7 +100,7 @@ function game(usersPick) {
  */
 
 function randomComputerChoice() {
-    const choices = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']
+    const choices = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
 
     const randomNumber = Math.floor(Math.random() * 5);
 

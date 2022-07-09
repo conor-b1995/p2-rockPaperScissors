@@ -99,7 +99,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 * The icons used for the user options section of the game were taken from [Font Awesome](https://fontawesome.com/). 
 ### Content
 * The help with the 'flex' for the scoreboard section and for the shadowing on the 'Rules' and 'Play Again' buttons came from [Kevin Powell](https://www.youtube.com/kepowob).
-* [W3 Schools](https://www.w3schools.com/howto/howto_css_modals.asp) 'How to' tutorial helped me create the rules modal and end game modal. 
+* [W3 Schools](https://www.w3schools.com/howto/howto_css_modals.asp) 'How to' tutorial helped me create the rules modal and end game modal. It also helped me to remove the scrollbar that appeared in the rules modal on different web browsers. 
 * I got some help with the functions in my Javascript code from [freeCodeCamp.org](https://www.youtube.com/c/Freecodecamp) 
 ### Acknowledgements
 Id like to thank my mentor Anthony Ugwu for all his help and guidance through this project.

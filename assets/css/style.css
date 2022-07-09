@@ -134,6 +134,13 @@ header>p {
     color: black;
     font-size: 1.5rem;
     overflow: scroll;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+}
+
+#rules-content::-webkit-scrollbar {
+    display: none;
 }
 
 ol>li {
